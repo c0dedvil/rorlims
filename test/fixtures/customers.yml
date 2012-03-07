@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  company: MyString
+  id_company: MyString
+  applicant: MyString
+  position: MyString
+  address: MyString
+  phones: MyString
+  fax: MyString
+  city: MyString
+  email: MyString
+  contract: MyString
+  date_contract: 2012-03-07
+  quote_number: MyString
+  date_quote: 2012-03-07
+
+two:
+  id: 1
+  company: MyString
+  id_company: MyString
+  applicant: MyString
+  position: MyString
+  address: MyString
+  phones: MyString
+  fax: MyString
+  city: MyString
+  email: MyString
+  contract: MyString
+  date_contract: 2012-03-07
+  quote_number: MyString
+  date_quote: 2012-03-07
