@@ -1,0 +1,31 @@
+<h1>Listing parameters</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Parameter</th>
+    <th>Units</th>
+    <th>Technic</th>
+    <th>Area</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @parameters.each do |parameter| %>
+  <tr>
+    <td><%= parameter.id %></td>
+    <td><%= parameter.parameter %></td>
+    <td><%= parameter.units %></td>
+    <td><%= parameter.technic %></td>
+    <td><%= parameter.area %></td>
+    <td><%= link_to 'Show', parameter %></td>
+    <td><%= link_to 'Edit', edit_parameter_path(parameter) %></td>
+    <td><%= link_to 'Destroy', parameter, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Parameter', new_parameter_path %>

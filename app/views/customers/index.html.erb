@@ -1,21 +1,21 @@
-<h1>Listing customers</h1>
+<h1>Customers List</h1>
 
 <table>
   <tr>
-    <th>Id</th>
+    <!-- <th>Id</th> -->
     <th>Company</th>
     <th>Id company</th>
     <th>Applicant</th>
-    <th>Position</th>
-    <th>Address</th>
+    <!-- <th>Position</th>
+    <th>Address</th> -->
     <th>Phones</th>
-    <th>Fax</th>
+    <!-- <th>Fax</th> -->
     <th>City</th>
     <th>Email</th>
     <th>Contract</th>
-    <th>Date contract</th>
+    <!-- <th>Date contract</th>
     <th>Quote number</th>
-    <th>Date quote</th>
+    <th>Date quote</th> -->
     <th></th>
     <th></th>
     <th></th>
@@ -23,20 +23,20 @@
 
 <% @customers.each do |customer| %>
   <tr>
-    <td><%= customer.id %></td>
+    <!-- <td><%= customer.id %></td> -->
     <td><%= customer.company %></td>
     <td><%= customer.id_company %></td>
     <td><%= customer.applicant %></td>
-    <td><%= customer.position %></td>
-    <td><%= customer.address %></td>
+    <!-- <td><%= customer.position %></td>
+    <td><%= customer.address %></td> -->
     <td><%= customer.phones %></td>
-    <td><%= customer.fax %></td>
+    <!-- <td><%= customer.fax %></td> -->
     <td><%= customer.city %></td>
     <td><%= customer.email %></td>
     <td><%= customer.contract %></td>
-    <td><%= customer.date_contract %></td>
+    <!-- <td><%= customer.date_contract %></td>
     <td><%= customer.quote_number %></td>
-    <td><%= customer.date_quote %></td>
+    <td><%= customer.date_quote %></td> -->
     <td><%= link_to 'Show', customer %></td>
     <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
     <td><%= link_to 'Destroy', customer, confirm: 'Are you sure?', method: :delete %></td>
@@ -47,3 +47,4 @@
 <br />
 
 <%= link_to 'New Customer', new_customer_path %>
+

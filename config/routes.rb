@@ -1,4 +1,6 @@
 Lims::Application.routes.draw do
+  resources :parameters
+
   resources :customers
 
   resources :users

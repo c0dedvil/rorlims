@@ -4,6 +4,7 @@
   <b>Id:</b>
   <%= @customer.id %>
 </p>
+<%
 
 <p>
   <b>Company:</b>
@@ -20,25 +21,30 @@
   <%= @customer.applicant %>
 </p>
 
+<!--
 <p>
   <b>Position:</b>
   <%= @customer.position %>
 </p>
 
+
 <p>
   <b>Address:</b>
   <%= @customer.address %>
 </p>
+-->
 
 <p>
   <b>Phones:</b>
   <%= @customer.phones %>
 </p>
 
+<!--
 <p>
   <b>Fax:</b>
   <%= @customer.fax %>
 </p>
+-->
 
 <p>
   <b>City:</b>
@@ -55,6 +61,7 @@
   <%= @customer.contract %>
 </p>
 
+<!--
 <p>
   <b>Date contract:</b>
   <%= @customer.date_contract %>
@@ -69,7 +76,8 @@
   <b>Date quote:</b>
   <%= @customer.date_quote %>
 </p>
-
+-->
 
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
 <%= link_to 'Back', customers_path %>
+
