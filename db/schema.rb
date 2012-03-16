@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120310134025) do
+ActiveRecord::Schema.define(:version => 20120315223407) do
 
   create_table "customers", :force => true do |t|
     t.string   "company",       :limit => 60
@@ -27,6 +27,12 @@ ActiveRecord::Schema.define(:version => 20120310134025) do
     t.date     "date_contract"
     t.string   "quote_number",  :limit => 20
     t.date     "date_quote"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "matrices", :force => true do |t|
+    t.string   "matrix"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

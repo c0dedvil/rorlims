@@ -1,0 +1,23 @@
+<h1>Matrices List</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Matrix</th>
+  </tr>
+
+<% @matrix.each do |matrix| %>
+  <tr>
+    <td><%= matrix.id %></td>
+    <td><%= matrix.matrix %></td>
+    <td><%= link_to 'Show', matrix %></td>
+    <td><%= link_to 'Edit', edit_matrix_path(matrix) %></td>
+    <td><%= link_to 'Destroy', matrix, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Matrix', new_matrix_path %>
+
